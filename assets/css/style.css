@@ -1,0 +1,38 @@
+<style>
+	.floating-container {
+	  overflow: hidden;
+	  width: 100%;
+	  background: #f9f9f9;
+	  padding: 30px 0;
+	}
+  
+	.floating-track {
+	  display: flex;
+	  animation: scroll 60s linear infinite;
+	}
+  
+	.floating-icons {
+	  display: flex;
+	}
+  
+	.floating-icon {
+	  width: 60px;
+	  height: 60px;
+	  margin: 10px 25px;
+	  background: #fff;
+	  padding: 10px;
+	  border-radius: 12px;
+	  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	  object-fit: contain;
+	  transition: transform 0.3s ease;
+	}
+  
+	.floating-icon:hover {
+	  transform: scale(1.1);
+	}
+  
+	@keyframes scroll {
+	  0%   { transform: translateX(0); }
+	  100% { transform: translateX(-50%); }
+	}
+  </style>
